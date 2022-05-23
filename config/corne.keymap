@@ -38,8 +38,8 @@ led_strip: ws2812@0 {
   chain-length = <6>; /* number of LEDs */
   spi-one-frame = <0x70>;
   spi-zero-frame = <0x40>;
-  color-mapping = <LED_COLOR_ID_GREEN
-                   LED_COLOR_ID_RED
+  color-mapping = <LED_COLOR_ID_RED
+                   LED_COLOR_ID_GREEN
                    LED_COLOR_ID_BLUE>;
 };
 
