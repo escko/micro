@@ -26,7 +26,10 @@
     tapping-term-ms = <135>;
 };
 
-led_strip: ws2812@0 {
+
+/{
+
+ led_strip: ws2812@0 {
   compatible = "worldsemi,ws2812-spi";
   label = "WS2812";
 
@@ -41,6 +44,7 @@ led_strip: ws2812@0 {
   color-mapping = <LED_COLOR_ID_RED
                    LED_COLOR_ID_GREEN
                    LED_COLOR_ID_BLUE>;
+  };                 
 };
 
 / {
