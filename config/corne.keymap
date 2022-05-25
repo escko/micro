@@ -85,8 +85,8 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &trans &trans &trans     &trans &trans &trans                   &kp Z &kp U  &kp I    &kp O   &kp P    &kp BKSP
-   &trans &trans &trans     &kp N  &kp C  &kp V                 &kp H &kp J  &kp K    &kp L   &kp APOS &kp RET
-   &trans &trans &kp LA(N1) &trans &kp F  &kp I                            &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp DQT
+   &trans &trans &trans     &kp N  &kp I  &kp V                 &kp H &kp J  &kp K    &kp L   &kp APOS &kp RET
+   &trans &trans &kp LA(N1) &trans &kp F  &kp D                            &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp DQT
                             &kp M  &kp B  &kp PERIOD                       &mo RAISE &lt LOWER SPACE &kp LGUI
                         >;
                         sensor-bindings = <&inc_dec_kp LC(LBKT) LC(RBKT)>;
@@ -99,8 +99,8 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &trans &trans &trans     &trans  &trans &trans                 &kp Z &kp U  &kp I    &kp O   &kp P    &kp BKSP
-   &trans &trans &trans     &trans  &kp X  &kp U                  &kp H &kp J  &kp K    &kp L   &kp APOS &kp RET
-   &trans &trans &mo GREEN  &kp K   &kp G  &kp D                            &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp DQT
+   &trans &trans &trans     &trans  &kp X  &kp C                  &kp H &kp J  &kp K    &kp L   &kp APOS &kp RET
+   &trans &trans &mo GREEN  &kp K   &kp G  &kp U                            &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp DQT
                             &kp T   &kp R  &kp COMMA                      &mo RAISE &lt LOWER SPACE &kp LGUI
                         >;
                         sensor-bindings = <&inc_dec_kp LC(LBKT) LC(RBKT)>;
@@ -129,7 +129,7 @@
    &trans &trans &trans     &trans          &trans          &trans                   &kp Z &kp U  &kp I    &kp O   &kp P    &kp BKSP
    &trans &trans &trans     &rgb_ug RGB_BRD &rgb_ug RGB_BRI &bt BT_SEL 0                  &kp H &kp J  &kp K    &kp L   &kp APOS &kp RET
    &trans &trans &trans     &rgb_ug RGB_SAD &rgb_ug RGB_SAI &bt BT_SEL 1                            &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp DQT
-                                      &out OUT_TOG &rgb_ug RGB_HUD &bt BT_CLR                      &mo RAISE &lt LOWER SPACE &kp LGUI
+                                 &rgb_ug RGB_HUD &out OUT_TOG &bt BT_CLR                      &mo RAISE &lt LOWER SPACE &kp LGUI
                         >;
                         sensor-bindings = <&inc_dec_kp N5 N6>;
                 };
