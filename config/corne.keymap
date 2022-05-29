@@ -14,6 +14,7 @@
 #define PRO     5
 #define PRO1    6
 #define PRO2    7
+#define PRO3    8
 
 &left_encoder { resolution = <2>; };
 // &left1_encoder { resolution = <2>; };
@@ -144,7 +145,7 @@
    &trans &trans &trans     &trans     &trans     &trans                   &kp Z &kp U  &kp I    &kp O   &kp P    &kp BKSP
    &trans &trans &trans     &lt PRO1 L     &kp LBKT   &kp RBKT                 &kp H &kp J  &kp K    &kp L   &kp APOS &kp RET
    &trans &trans &kp &trans &kp B          &kp E      &kp S                            &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp DQT
-                            &lt PRO2 SPACE &kp V      &kp LALT                      &mo RAISE &lt LOWER SPACE &kp LGUI
+                            &lt PRO3 SPACE &lt PRO2 V &kp LALT                      &mo RAISE &lt LOWER SPACE &kp LGUI
                         >;
                         sensor-bindings = <&inc_dec_kp LG(LBKT) LG(RBKT)>;
                 };
@@ -158,11 +159,25 @@
    &trans &trans &trans     &trans     &trans        &trans                   &kp Z &kp U  &kp I    &kp O   &kp P    &kp BKSP
    &trans &trans &trans     &trans     &kp LS(LG(Z)) &kp LG(Z)                 &kp H &kp J  &kp K    &kp L   &kp APOS &kp RET
    &trans &trans &kp &trans &trans     &trans        &trans                            &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp DQT
-                            &kp LG(K)   &kp X         &kp C                    &mo RAISE &lt LOWER SPACE &kp LGUI
+                            &kp LG(K)  &trans        &trans                   &mo RAISE &lt LOWER SPACE &kp LGUI
                         >;
                         sensor-bindings = <&inc_dec_kp LBKT RBKT>;
                 };
                 pro2_layer {
+// -----------------------------------------------------------------------------------------
+// |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &trans &trans &trans     &trans    &trans    &trans                   &kp Z &kp U  &kp I    &kp O   &kp P    &kp BKSP
+   &trans &trans &trans     &kp LG(U) &kp X     &kp C                 &kp H &kp J  &kp K    &kp L   &kp APOS &kp RET
+   &trans &trans &kp &trans &trans    &trans    &trans                            &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp DQT
+                            &trans    &trans    &trans                      &mo RAISE &lt LOWER SPACE &kp LGUI
+                        >;
+                        sensor-bindings = <&inc_dec_kp &trans &trans>;
+                };
+                pro3_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
