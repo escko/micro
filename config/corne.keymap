@@ -77,7 +77,7 @@
    &trans &trans &kp LA(N1)   &lt LOWER W &kp E &kp S                                    &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp DQT
                               &lt ORANG Q &kp Z &kp LALT                                 &mo RAISE &lt LOWER SPACE &kp LGUI
                         >;
-                        sensor-bindings = <&inc_dec_kp N5 N6 >;
+                        sensor-bindings = <&inc_dec_kp N7 N8 >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
@@ -115,7 +115,7 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &trans &trans &trans    &trans    &trans           &trans                   &kp Z &kp U  &kp I    &kp O   &kp P    &kp BKSP
-   &trans &trans &trans    &kp LG(X)        &kp LG(C)     &kp LG(V)                  &kp H &kp J  &kp K    &kp L   &kp APOS &kp RET
+   &trans &trans &trans    &kp LG(X) &kp LG(C) &kp LG(V)                  &kp H &kp J  &kp K    &kp L   &kp APOS &kp RET
    &trans &trans &tog PRO  &kp P &kp BACKSLASH &kp A                           &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp DQT
                            &trans    &kp LC(UP_ARROW) &kp C_PLAY_PAUSE                      &mo RAISE &lt LOWER SPACE &kp LGUI
                         >;
@@ -133,7 +133,7 @@
    &trans &trans &trans     &rgb_ug RGB_SAD &rgb_ug RGB_SAI &bt BT_SEL 1                            &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp DQT
                                       &rgb_ug RGB_HUD &bt BT_SEL 2 &bt BT_CLR                      &mo RAISE &lt LOWER SPACE &kp LGUI
                         >;
-                        sensor-bindings = <&inc_dec_kp N5 N6>;
+                        sensor-bindings = <&inc_dec_kp N7 N8>;
                 };
                 pro_layer {
 // -----------------------------------------------------------------------------------------
@@ -144,7 +144,7 @@
                         bindings = <
    &trans &trans &trans     &trans     &trans     &trans                   &kp Z &kp U  &kp I    &kp O   &kp P    &kp BKSP
    &trans &trans &trans     &lt PRO1 L     &kp LBKT   &kp RBKT                 &kp H &kp J  &kp K    &kp L   &kp APOS &kp RET
-   &trans &trans &kp &trans &kp B          &kp E      &kp S                            &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp DQT
+   &trans &trans &trans     &kp B          &kp E      &kp S                            &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp DQT
                             &lt PRO3 SPACE &lt PRO2 V &kp LALT                      &mo RAISE &lt LOWER SPACE &kp LGUI
                         >;
                         sensor-bindings = <&inc_dec_kp LG(LBKT) LG(RBKT)>;
@@ -158,7 +158,7 @@
                         bindings = <
    &trans &trans &trans     &trans     &trans        &trans                   &kp Z &kp U  &kp I    &kp O   &kp P    &kp BKSP
    &trans &trans &trans     &trans     &kp LS(LG(Z)) &kp LG(Z)                 &kp H &kp J  &kp K    &kp L   &kp APOS &kp RET
-   &trans &trans &kp &trans &trans     &trans        &trans                            &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp DQT
+   &trans &trans &trans     &trans     &trans        &trans                            &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp DQT
                             &kp LG(K)  &trans        &trans                   &mo RAISE &lt LOWER SPACE &kp LGUI
                         >;
                         sensor-bindings = <&inc_dec_kp LBKT RBKT>;
@@ -172,7 +172,7 @@
                         bindings = <
    &trans &trans &trans     &trans    &trans    &trans                   &kp Z &kp U  &kp I    &kp O   &kp P    &kp BKSP
    &trans &trans &trans     &kp LG(U) &kp X     &kp C                 &kp H &kp J  &kp K    &kp L   &kp APOS &kp RET
-   &trans &trans &kp &trans &trans    &trans    &trans                            &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp DQT
+   &trans &trans &trans     &trans    &trans    &trans                            &kp N &kp M  &kp CMMA &kp DOT &kp FSLH &kp DQT
                             &trans    &trans    &trans                      &mo RAISE &lt LOWER SPACE &kp LGUI
                         >;
                         sensor-bindings = <&inc_dec_kp &trans &trans>;
