@@ -21,11 +21,11 @@
 // &right_encoder { resolution = <1>; };
 
 &mt {
-    tapping-term-ms = <135>;
+    tapping-term-ms = <130>;
 };
 
 &lt {
-    tapping-term-ms = <135>;
+    tapping-term-ms = <130>;
 };
 
 
